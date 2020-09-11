@@ -1,0 +1,36 @@
+<div class="row">
+  <h2 class="subtitle">Enter your Spotify login information.</h2>
+  <div class="field">
+    <label class="label">Username</label>
+    <div class="control">
+      <input
+        class="input"
+        type="text"
+        placeholder="username"
+        [(ngModel)]="unValue"
+      />
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label">Password</label>
+    <div class="control">
+      <input
+        class="input"
+        type="text"
+        placeholder="password"
+        [(ngModel)]="pwValue"
+      />
+    </div>
+  </div>
+
+  <button
+    class="button"
+    type="submit"
+    (click)="onSubmitClick(unValue, pwValue)"
+  >
+    Submit
+  </button>
+
+  <h3 class="subtitle">{{ result }}</h3>
+</div>
