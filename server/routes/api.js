@@ -12,6 +12,7 @@ router.get("/", (req, res) => {
 // authenticate user spotify credentials
 router.get("/spotify/auth", (req, res) => {
   console.log("api called");
+  res.send("api called");
   axios
     .get(
       "https://accounts.spotify.com/authorize?client_id=" +
